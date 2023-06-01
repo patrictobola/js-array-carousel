@@ -27,4 +27,4 @@ let currentIndex = 0;
 const images = document.querySelectorAll('img');
 
 // Permetto alla (prima foto in questo caso) di essere visualizzata aggiungendo la classe active  
-images[currentIndex].classList.add('active');
+images[currentIndex].classList.add('active'); 
