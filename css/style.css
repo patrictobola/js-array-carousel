@@ -1,0 +1,25 @@
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.container {
+  margin-top: 150px;
+  position: relative;
+}
+#gallery {
+  height: 600px;
+  width: 100%;
+}
+.fas {
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
