@@ -28,3 +28,20 @@ const images = document.querySelectorAll('img');
 
 // Permetto alla (prima foto in questo caso) di essere visualizzata aggiungendo la classe active  
 images[currentIndex].classList.add('active'); 
+
+// Al click del bottone 'avanti'
+nextBtn.addEventListener('click', function(){
+    if (currentIndex < pictures.length - 1) {
+        images[currentIndex].classList.remove('active'); 
+        currentIndex ++;
+        images[currentIndex].classList.add('active'); 
+    }
+})
+// Al click del bottone 'indetro'
+prevBtn.addEventListener('click', function(){
+    if (currentIndex > 0){
+        images[currentIndex].classList.remove('active'); 
+        currentIndex -- ;
+        images[currentIndex].classList.add('active'); 
+    }
+})
